@@ -10,6 +10,12 @@ The project was developed in three main phases:
 
 ---
 
+## Live Demo
+
+Check out the live demo: [Live Demo](https://insta-board-chi.vercel.app/)
+
+---
+
 ## 🚧 What Was the Most Difficult Part?
 
 The most challenging aspect was making the **navigation bar fully responsive** while maintaining proper layout and functionality across 7+ different screen sizes.
