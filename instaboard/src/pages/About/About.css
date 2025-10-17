@@ -1,0 +1,362 @@
+.about-page {
+  min-height: 100%;
+  padding: 60px 20px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-page.light {
+  background: linear-gradient(135deg, #0f172a 0%, #6d28d9 50%, #0f172a 100%);
+}
+
+.about-page.dark {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a0a3e 50%, #0a0e27 100%);
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: slideDown 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #a78bfa, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 16px 0;
+  letter-spacing: -1px;
+}
+
+.about-subtitle {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.about-content {
+  animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
+}
+
+.content-section {
+  margin-bottom: 50px;
+  padding: 30px;
+  background: rgba(30, 41, 59, 0.6);
+  border: 2px solid rgba(168, 85, 247, 0.2);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content-section:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(168, 85, 247, 0.4);
+  transform: translateY(-4px);
+}
+
+.content-title {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #a78bfa, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.5px;
+}
+
+.content-text {
+  font-size: 16px;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.features-list li {
+  font-size: 16px;
+  color: #cbd5e1;
+  padding: 12px 16px;
+  background: rgba(168, 85, 247, 0.1);
+  border-left: 4px solid #a855f7;
+  border-radius: 6px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.2px;
+}
+
+.features-list li:hover {
+  background: rgba(168, 85, 247, 0.2);
+  transform: translateX(8px);
+}
+
+.tech-stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  background: rgba(168, 85, 247, 0.1);
+  border: 2px solid rgba(168, 85, 247, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tech-item:hover {
+  background: rgba(168, 85, 247, 0.2);
+  border-color: #a855f7;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.2);
+}
+
+.tech-icon {
+  font-size: 32px;
+  display: inline-block;
+}
+
+.tech-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #a78bfa;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.about-cta {
+  text-align: center;
+  padding: 60px 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(168, 85, 247, 0.1),
+    rgba(236, 72, 153, 0.1)
+  );
+  border: 2px solid rgba(168, 85, 247, 0.2);
+  border-radius: 16px;
+  animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+}
+
+.cta-title {
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #a78bfa, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.cta-description {
+  font-size: 16px;
+  color: #cbd5e1;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.3px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 14px 36px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.cta-btn.primary {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.4);
+}
+
+.cta-btn.primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(236, 72, 153, 0.5);
+}
+
+.cta-btn.secondary {
+  background: rgba(168, 85, 247, 0.1);
+  border: 2px solid rgba(168, 85, 247, 0.4);
+  color: #a855f7;
+}
+
+.cta-btn.secondary:hover {
+  background: rgba(168, 85, 247, 0.2);
+  border-color: #a855f7;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 40px 15px;
+  }
+
+  .about-header {
+    margin-bottom: 40px;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+
+  .about-subtitle {
+    font-size: 16px;
+  }
+
+  .content-section {
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .content-title {
+    font-size: 22px;
+  }
+
+  .content-text {
+    font-size: 14px;
+  }
+
+  .features-list li {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .tech-stack {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .tech-icon {
+    font-size: 28px;
+  }
+
+  .tech-name {
+    font-size: 12px;
+  }
+
+  .about-cta {
+    padding: 40px 20px;
+  }
+
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .cta-description {
+    font-size: 14px;
+  }
+
+  .cta-buttons {
+    gap: 12px;
+  }
+
+  .cta-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 30px 10px;
+  }
+
+  .about-header {
+    margin-bottom: 30px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-subtitle {
+    font-size: 14px;
+  }
+
+  .content-section {
+    margin-bottom: 20px;
+    padding: 16px;
+  }
+
+  .content-title {
+    font-size: 18px;
+  }
+
+  .content-text {
+    font-size: 13px;
+  }
+
+  .features-list li {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .tech-stack {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .tech-item {
+    padding: 15px;
+  }
+
+  .tech-icon {
+    font-size: 24px;
+  }
+
+  .tech-name {
+    font-size: 11px;
+  }
+
+  .about-cta {
+    padding: 30px 15px;
+  }
+
+  .cta-title {
+    font-size: 22px;
+  }
+
+  .cta-description {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+}
